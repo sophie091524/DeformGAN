@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<style>
+  .bottom-three {
+      margin-bottom: 5cm;
+  }
+</style>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="main.css" rel="stylesheet" media="all">
+    <meta name="description" content="Restorative-Speech-Enhancement" />
+    <meta name="keywords" content="speech enhancement, generative models, progressive learning, speech codec, quantization">
+    <script>
+    function buttonSwitch(id, text) {
+        old_src = document.getElementById(id).src;
+        ind = old_src.lastIndexOf('/');
+        document.getElementById(id).src = old_src.substr(0, ind + 1) + text;
+    }
+    </script>
+    <title>DeformGAN</title>
+</head>
+
+<body>
+    <div id="top_arrow" style="position: fixed; bottom: 10px; right: 10px;">
+        <a href="#title"><img src="./figures/top_arrow.jpg" style="border: 0pt none ; width: 26px; height: 26px;"/></a>
+    </div>
+    
+    <!-- <p  style="margin-bottom:3cm;">"  "</p> -->
+    <h2 id="title" class="auto-style1"><center>Restorative Speech Enhancement: A Progressive Approach Using SE and Codec Modules for Noise and Reverberation Reduction</center></h2>
+    <p class="auto-style7" align="center">
+        Anonymous Author(s)
+    </p>
+
+    <!-- Abstract -->
+    <p class="auto-style5">&nbsp;</p>
+    <p class="style2", style="color:blue;"><strong><span class="auto-style6"><u>Abstract</u></span></strong></p>
+    <p align="justify" class="auto-style5-j"> N/A 
+    </p>
+
+    <!-- Performance -->
+    <p class="auto-style5">&nbsp;</p>
+    <p id="performance" , class="auto-style4", style="color:blue;"><strong><u>Results</u></strong></p>
+
+        
+    <!-- Audio 01 -----------------------------------------------------------------------------------------------------------------------> 
+    <center>
+        <table width="1500" border="1">
+            <td width="300">
+            <p><center><strong>Simulated</strong></center></p>
+            </td>
+        </table>
+    </center>
+    <center>
+        <table width="1500" border="1">
+            <td width="460">
+            <p><center><audio width="440" controls><source src="demo/sim1/reverb.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Reverb</strong></center></p>
+            </td>
+            <td width="460">
+            <p><center><audio width="440" controls><source src="demo/sim1/clean.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Clean</strong></center></p>
+            </td>
+            <td width="460">
+            <p><center><audio width="440" controls><source src="demo/sim1/deform.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Deform</strong></center></p>
+            </td>
+        </table>
+    </center>
+
+    <!-- Audio 02 -----------------------------------------------------------------------------------------------------------------------> 
+    <center>
+        <table width="1500" border="1">
+            <td width="460">
+            <p><center><audio width="440" controls><source src="demo/sim2/reverb.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Reverb</strong></center></p>
+            </td>
+            <td width="460">
+            <p><center><audio width="440" controls><source src="demo/sim2/clean.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Clean</strong></center></p>
+            </td>
+            <td width="460">
+            <p><center><audio width="440" controls><source src="demo/sim2/deform.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Deform</strong></center></p>
+            </td>
+        </table>
+    </center>
+
+    <!-- Audio 03 -----------------------------------------------------------------------------------------------------------------------> 
+    <center>
+        <table width="1500" border="1">
+            <td width="460">
+            <p><center><audio width="440" controls><source src="demo/sim3/reverb.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Reverb</strong></center></p>
+            </td>
+            <td width="460">
+            <p><center><audio width="440" controls><source src="demo/sim3/clean.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Clean</strong></center></p>
+            </td>
+            <td width="460">
+            <p><center><audio width="440" controls><source src="demo/sim3/deform.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Deform</strong></center></p>
+            </td>
+        </table>
+    </center>
+
+    <!-- Audio 04 -----------------------------------------------------------------------------------------------------------------------> 
+    <center>
+        <table width="1500" border="1">
+            <td width="300">
+            <p><center><strong>Real Recording</strong></center></p>
+            </td>
+        </table>
+    </center>
+    <center>
+        <table width="1500" border="1">
+            <td width="700">
+            <p><center><audio width="680" controls><source src="demo/real1/reverb.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Reverb</strong></center></p>
+            </td>
+            <td width="700">
+            <p><center><audio width="680" controls><source src="demo/real1/deform.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Deform</strong></center></p>
+            </td>
+        </table>
+    </center>
+
+    <!-- Audio 05 -----------------------------------------------------------------------------------------------------------------------> 
+    <center>
+        <table width="1500" border="1">
+            <td width="700">
+            <p><center><audio width="680" controls><source src="demo/real2/reverb.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Reverb</strong></center></p>
+            </td>
+            <td width="700">
+            <p><center><audio width="680" controls><source src="demo/real2/deform.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
+            <p><center><strong>Deform</strong></center></p>
+            </td>
+        </table>
+    </center>
+
+
+    <p class="auto-style5">&nbsp;</p>
+    <p id="reference" , class="auto-style4", style="color:blue;"><strong><u>References</u></strong></p>
+    <p id="ref_1" class="auto-style5">
+        N/A
+    </p>
+    <p class="auto-style1"><font color="#999999">Last update: Feb 2, 2025</font></p>
+</body>
+
+</html>
