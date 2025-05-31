@@ -1,3 +1,3 @@
-# DeformGAN
+# deformableconvolutionGAN
 
-This is demo page for DeformGAN.
+This is demo page for deformableconvolution GAN.
